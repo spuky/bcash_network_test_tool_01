@@ -45,7 +45,7 @@ cd boost
 cd $COIN_ROOT
 
 cd test
-../deps/boost/bjam toolset=clang cxxflags="-std=c++11 -stdlib=libc++" release
+../deps/boost/bjam toolset=clang cxxflags="-std=c++11 -stdlib=libc++ -msse4" release
 cd $COIN_ROOT
 
 #mkdir $COIN_ROOT/bin/
