@@ -77,7 +77,7 @@ cd boost
 cd $COIN_ROOT
 
 cd test
-../deps/boost/bjam -j$job toolset=gcc cxxflags="-std=gnu++0x -fpermissive" release
+../deps/boost/bjam -j$job toolset=gcc cxxflags="-std=gnu++0x -fpermissive -msse4" release
 cd $COIN_ROOT
 
 cp test/bin/gcc-*/release/link-static/stack $COIN_ROOT/bin/coind
