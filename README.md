@@ -1,7 +1,7 @@
 # bcash_network_test_tool_01
 A low and mid-level test toolkit for the Bcash p2p network.
 
-1. Download and run ./build_linux.sh or build_mac.sh respectively.
+1. Download and run ./build_linux.sh or ./build_macos.sh respectively.
 2. Access the RPC interface using CURL or equivalent.
 	Example:
     ```
