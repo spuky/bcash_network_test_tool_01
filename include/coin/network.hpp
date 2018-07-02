@@ -71,12 +71,15 @@ namespace coin {
             enum { tcp_inbound_minimum = 16 };
 #define BCASH_STRESS_TEST 1
 #if (defined BCASH_STRESS_TEST && BCASH_STRESS_TEST)
-			enum { tcp_inbound_maximum = 24 };
-#else
             /**
              * The maximum number of inbound TCP connections.
              */
             enum { tcp_inbound_maximum = 128 };
+#else
+            /**
+             * The maximum number of inbound TCP connections.
+             */
+            enum { tcp_inbound_maximum = 24 };
 #endif // BCASH_STRESS_TEST
             /**
              * rfc1123 time.

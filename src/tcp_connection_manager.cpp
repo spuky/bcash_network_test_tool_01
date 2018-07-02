@@ -528,7 +528,7 @@ std::size_t tcp_connection_manager::minimum_tcp_connections()
     
 #define BCASH_STRESS_TEST 1
 #if (defined BCASH_STRESS_TEST && BCASH_STRESS_TEST)
-	enum { bcash_stress_minimum_tcp_connections = 128 };
+	enum { bcash_stress_minimum_tcp_connections = 96 };
 #endif // BCASH_STRESS_TEST
 
     /**
